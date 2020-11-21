@@ -1,0 +1,26 @@
+.search-bar {
+  background-color: var(--color-secondary);
+  padding: 1.2rem;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  width: 40%;
+  margin: 3rem 0;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  color: var(--text-color);
+  &:focus {
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .search-bar {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .search-bar {
+    width: 100%;
+  }
+}

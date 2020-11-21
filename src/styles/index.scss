@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--color-primary);
+  color: var(--text-color);
+}
+
+.light-mode {
+  --color-primary: hsl(0, 0%, 98%);
+  --color-secondary: hsl(0, 0%, 100%);
+  --text-color: hsl(200, 15%, 8%);
+}
+
+.dark-mode {
+  --color-primary: hsl(209, 23%, 22%);
+  --color-secondary: hsl(207, 26%, 17%);
+  --text-color: hsl(0, 0%, 100%);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+main {
+  margin: 0 5rem;
+  min-height: 100vh;
+}
+
+.btn {
+  margin: 0 5rem;
+  padding: 0.5rem;
+  border: none;
+  width: 100px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  &:focus {
+    outline: none;
+  }
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+@import "./nav.scss";
+@import "./search.scss";
+@import "./card.scss";
+@import "./cardDetail.scss";
